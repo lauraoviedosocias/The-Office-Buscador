@@ -9,3 +9,32 @@ $sombra: rgba(0, 0, 0, 0.35) 0, 5px;
 
 $tipografia-principal: "Roboto";
 
+
+@mixin flex-nav {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-nav-botones {
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+@mixin flex-centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    @include flex-nav()
+}
+
+ol {
+    @include flex-nav-botones()
+}
+
