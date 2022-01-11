@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
+
+
+
+
 $color-principal: #EEC373;
 $color-secundario: #CA965C;
 $color-oscuro: #876445;
@@ -9,3 +13,164 @@ $sombra: rgba(0, 0, 0, 0.35) 0, 5px;
 
 $tipografia-principal: "Roboto";
 
+body {
+    margin: 0;
+    background-color: $color-secundario;
+}
+
+@mixin flex-nav {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-nav-botones {
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@mixin flex-centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: $color-claro;
+
+    // padding: 0 100px;
+}
+
+// HEADER
+
+header {
+    @include flex-nav();
+    height: 90px;
+    background-color: $color-principal;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px; 
+}
+
+.container-logo {
+    margin: 5px;
+    width: 140px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    @include flex-nav-botones();
+    width: 400px;
+    font-family: $tipografia-principal;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    height: 100vh;
+    background-color: $color-claro;
+    @include flex-centrar();
+    display: none;
+}
+
+// CHARACTERS SECTION
+
+.section-characters {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-claro;
+    height: 100vh;
+    display: none;
+}
+
+
+.img-characters-section {
+    height: 375px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #000;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+
+.container-search {
+    display: flex;
+    width: 1500px;
+    padding: 15px;
+}
+
+h2 {
+    font-family: $tipografia-principal;
+    font-size: 25px;
+    color: #231F20;
+    margin: 0;
+    margin-top: 25px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+input, select, button {
+    font-family: $tipografia-principal;
+    font-size: 20px;
+    color: #231F20;
+    margin-top: 25px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+button {
+    border: none;
+}
+
+    
+// EPISODES-SECTION
+
+.section-episodes {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-claro;
+    height: 100vh;
+    display: none;
+}
+
+.img-episodes-section {
+    height: 450px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #000;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+// QUOTES-SECTION
+
+.section-quotes {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-claro;
+    height: 100vh;
+}
+
+.img-quotes-section {
+    height: 510px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #000;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}

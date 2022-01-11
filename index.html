@@ -9,30 +9,130 @@
 </head>
 <body>
     <!-- HEADER HOME -->
-
+<div class="main-section">
     <header>
 
-        <ol>
-            <li>
-                <a><img src="img/DF_logo.png"></a>
-            </li>
-            <li><a>CHARACTERS</a></li>
-            <li><a>EPISODES</a></li>
-            <li><a>QUOTES</a></li>
-        </ol>
+        <a class="container-logo"><img class= "img-logo" src="img/DF_logo.png"></a>
+
+        <ul>
+            <li><a class="nav-button">CHARACTERS</a></li>
+            <li><a class="nav-button">EPISODES</a></li>
+            <li><a class="nav-button">QUOTES</a></li>
+        </ul>
     </header>
 
     <main>
+        <h1>All you need to know about The Office and more.</h1>
+        <p>Get a random quote by clicking on Creed's head.</p>
         <img src="img/the_office.jpg">
     </main>
+
+    <!-- CHARACTERS SECTION -->
+
     
 
+    <section class="section-characters">
+        <div class="img-characters-section">
+            <img class="img-banner" src="img/the_office_banner.PNG">
+        </div>
+
+        <!-- <h2>Do you wanna know who works at Dunder Mifflin, Inc?</h2> -->
+        <div class="container-search">
+            <h2>Who are you looking for?</h2>
+            <div class="input-search">
+                <input type="text" id="input-search" class="input-search" placeholder="Write a character's name"
+                    aria-labelledby="search-title">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </div>
+            <button type="button" class="search-button">Search</button>
+            <!-- <div class="container-sort">
+                <label for="search-sort">SORT</label>
+                <select name="search-sort" id="search-sort">
+                    <option value="title">A-Z</option>
+                    <option value="-title">Z-A</option>
+                </select>
+            </div> -->
+            
+        </div>
+        
+        <div class="section-results">
+    
+            <h2>Results</h2>
+          
+        </div> 
 
 
+    </section>
+    
+<!-- EPISODES SECTION -->
+
+<section class="section-episodes">
+    <div class="img-episodes-section">
+        <img class="img-banner" src="img/the_office_banner_2.png">
+    </div>
+
+    <div class="container-search">
+        <h2>Which episode is your favorite?</h2>
+        <div class="input-search">
+            <input type="text" id="input-search" class="input-search" placeholder="Write an episode's title"
+                aria-labelledby="search-title">
+            <i class="fas fa-search" aria-hidden="true"></i>
+        </div>
+        <button type="button" class="search-button">Search</button>
+        <!-- <div class="container-sort">
+            <label for="search-sort">SORT</label>
+            <select name="search-sort" id="search-sort">
+                <option value="title">A-Z</option>
+                <option value="-title">Z-A</option>
+            </select>
+        </div> -->
+        
+    </div>
+    
+    <div class="section-results">
+
+        <h2>Results</h2>
+      
+    </div> 
 
 
+</section>
+
+<!-- QUOTES SECTION -->
+
+<section class="section-quotes">
+    <div class="img-quotes-section">
+        <img class="img-banner" src="img/michael_scott_quote.jpg">
+    </div>
+
+    <div class="container-search">
+        <h2>Remember who said that...?</h2>
+        <div class="input-search">
+            <input type="text" id="input-search" class="input-search" placeholder="Search for a quote"
+                aria-labelledby="search-title">
+            <i class="fas fa-search" aria-hidden="true"></i>
+        </div>
+        <button type="button" class="search-button">Search</button>
+        <!-- <div class="container-sort">
+            <label for="search-sort">SORT</label>
+            <select name="search-sort" id="search-sort">
+                <option value="title">A-Z</option>
+                <option value="-title">Z-A</option>
+            </select>
+        </div> -->
+        
+    </div>
+    
+    <div class="section-results">
+
+        <h2>Results</h2>
+      
+    </div> 
 
 
+</section>
 
+
+</div>
 </body>
 </html>
