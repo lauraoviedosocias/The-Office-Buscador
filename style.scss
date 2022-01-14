@@ -81,7 +81,6 @@ main {
     height: 100vh;
     background-color: $color-claro;
     @include flex-centrar();
-    display: none;
 }
 
 // CHARACTERS SECTION
@@ -163,6 +162,7 @@ button {
     flex-direction: column;
     background-color: $color-claro;
     height: 100vh;
+    display: none;
 }
 
 .img-quotes-section {
