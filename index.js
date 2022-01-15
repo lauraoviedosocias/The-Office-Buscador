@@ -53,4 +53,8 @@ const inputCharacters = document.getElementById("input-characters-search")
 const inputEpisodes = document.getElementById("input-episodes-search")
 const inputQuotes = document.getElementById("input-quotes-search")
 
-fetch
+fetch("https://officeapi.dev/api/quotes")
+.then((res) => res.json())
+.then((data) => {
+    console.log(data)
+})
