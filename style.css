@@ -51,10 +51,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
-.section-characters {
+.characters-section {
   display: flex;
   flex-direction: column;
   background-color: #F4DFBA;
@@ -101,7 +100,7 @@ button {
   border: none;
 }
 
-.section-episodes {
+.episodes-section {
   display: flex;
   flex-direction: column;
   background-color: #F4DFBA;
@@ -119,11 +118,12 @@ button {
   padding-top: 10px;
 }
 
-.section-quotes {
+.quotes-section {
   display: flex;
   flex-direction: column;
   background-color: #F4DFBA;
   height: 100vh;
+  display: none;
 }
 
 .img-quotes-section {

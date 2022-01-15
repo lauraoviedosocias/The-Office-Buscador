@@ -81,12 +81,11 @@ main {
     height: 100vh;
     background-color: $color-claro;
     @include flex-centrar();
-    display: none;
 }
 
 // CHARACTERS SECTION
 
-.section-characters {
+.characters-section {
     display: flex;
     flex-direction: column;
     background-color: $color-claro;
@@ -138,7 +137,7 @@ button {
     
 // EPISODES-SECTION
 
-.section-episodes {
+.episodes-section {
     display: flex;
     flex-direction: column;
     background-color: $color-claro;
@@ -158,11 +157,12 @@ button {
 
 // QUOTES-SECTION
 
-.section-quotes {
+.quotes-section {
     display: flex;
     flex-direction: column;
     background-color: $color-claro;
     height: 100vh;
+    display: none;
 }
 
 .img-quotes-section {
